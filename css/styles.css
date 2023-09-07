@@ -1,0 +1,92 @@
+/*Esto sirve para dejar margenes y hojas vacios*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+  }
+
+  /*Damos formato general al Encabezado (header)*/
+header{
+    background-color: black; /* Color de fondo*/
+    color: white; /* Color de Letras*/
+    position: sticky; 
+    top: 0; 
+    height: 4pc;
+    
+    
+}
+.bar2{
+    display: flex;
+    justify-content: right;/*los datos se alinean a la derecha dentro del nav*/
+    padding: 1pc; /* COn este hacemos que el menu quede en el centro del Nav */
+    align-items: center;
+
+}
+.bar2 ul{
+    
+    display: flex;
+    justify-content: right;
+    gap: 1pc; /*Establece el tamaño del espacio entre las filas en un diseño de cuadrícula*/
+    float: left;
+    
+    }
+
+/*Hasta aqui llegan las propiedades asociadas al encabezado*/
+
+/*Aqui inicia el estilo la pagina principal de presentación*/
+.principal{
+    display: flex;
+    background-image:url("../Imagenes/banner.jpg");
+  /*  background-repeat: no-repeat;*/
+}
+.principal h2{
+    display: flex;
+    width: 500px;
+    margin: 100px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: /*relieve*/ 0 1px 0 rgb(200,200,200), 0 2px 0 rgb(190,190,190), 0 3px 0 rgb(180,180,180), 0 4px 0 rgb(175,175,175), 0 5px 0 rgb(180,180,180), 0 6px 0 rgb(190,190,190), /*sombra*/ 5px 7px 5px rgba(0, 0, 0, .40), 5px 12px 10px rgba(0, 0, 0, .30), 5px 17px 20px rgba(0, 0, 0, .20), 5px 22px 30px rgba(0, 0, 0, .10);
+    color: white;
+}
+.principal h3{
+    display: flex;
+    width: 500px;
+    margin: 100px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(10, 238, 101, 0.718);
+    top: 20%;
+    
+}
+.principal p{
+    display: flex;
+    width: 700px;
+    color:wheat;
+    text-align: center;
+}
+/*Aqui Termina el estilo la pagina principal de presentación*/
+
+
+.quien{
+    display: flex;
+    justify-content: center;
+    background-color:brown;
+    height: 200px;
+}
+.misservicios{
+    display: flex;
+    justify-content: center;
+    background-color:beige;
+    height: 200px; 
+}
+.contactar{
+    display: flex;
+    justify-content: center;
+    background-color:burlywood ;
+    height: 200px; 
+}
