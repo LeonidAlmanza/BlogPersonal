@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('/Fuentes/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
 /*Esto sirve para dejar margenes y hojas vacios*/
 *{
     margin: 0;
@@ -5,88 +9,516 @@
     list-style: none;
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   /*Damos formato general al Encabezado (header)*/
 header{
-    background-color: black; /* Color de fondo*/
+    background-color: #2e3032; /* Color de fondo*/
     color: white; /* Color de Letras*/
     position: sticky; 
     top: 0; 
     height: 4pc;
+    opacity: 2 pc;
     
     
 }
-.bar2{
+.barrademenusuperior{
     display: flex;
     justify-content: right;/*los datos se alinean a la derecha dentro del nav*/
     padding: 1pc; /* COn este hacemos que el menu quede en el centro del Nav */
     align-items: center;
 
 }
-.bar2 ul{
+.barrademenusuperior ul{
     
     display: flex;
     justify-content: right;
     gap: 1pc; /*Establece el tamaño del espacio entre las filas en un diseño de cuadrícula*/
     float: left;
     
+    
     }
 
 /*Hasta aqui llegan las propiedades asociadas al encabezado*/
-
-/*Aqui inicia el estilo la pagina principal de presentación*/
+/*Aqui inician las propiedades del DiV posterior al encabezado nombre y profesión*/
 .principal{
-    display: flex;
-    background-image:url("../Imagenes/banner.jpg");
+    display:flex;
+    height: 28pc;
+    width: 100%;
+    background-color:#2e3032;
+    justify-content: center;
+    gap: 1pc;
+    box-sizing: content-box;
+    /* background: url(/Imagenes/FondoLeonid.png) center center/cover no-repeat; */
+
   /*  background-repeat: no-repeat;*/
 }
-.principal h2{
+.principal .contenedordeprincipal{
     display: flex;
-    width: 500px;
-    margin: 100px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: /*relieve*/ 0 1px 0 rgb(200,200,200), 0 2px 0 rgb(190,190,190), 0 3px 0 rgb(180,180,180), 0 4px 0 rgb(175,175,175), 0 5px 0 rgb(180,180,180), 0 6px 0 rgb(190,190,190), /*sombra*/ 5px 7px 5px rgba(0, 0, 0, .40), 5px 12px 10px rgba(0, 0, 0, .30), 5px 17px 20px rgba(0, 0, 0, .20), 5px 22px 30px rgba(0, 0, 0, .10);
-    color: white;
+    position: absolute;
+    margin: 1px 1px 1px 1px;
+    height: 20pc;
+    width: 100%;
+    justify-content: center;
 }
-.principal h3{
+.contenedordeprincipal .titulo{
     display: flex;
-    width: 500px;
-    margin: 100px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    position: absolute;
+    top:20%;
+    flex-direction:column;
+    align-items: center;
+}
+.contenedordeprincipal h2{
+    display: flex;
+    font-family: "Roboto Slab";
+    font-size: 94.56px;
+    text-align: center;
+    text-shadow: /*relieve*/   /*sombra*/ 5px 7px 5px rgba(0, 0, 0, .40), 5px 12px 10px rgba(0, 0, 0, .30), 5px 17px 20px rgba(0, 0, 0, .20), 5px 22px 30px rgba(0, 0, 0, .10);
+    color: white;
+    gap: 6px;
+}
+
+.contenedordeprincipal h3{
+    display: flex;
+    font-family: "Roboto Slab";
+    top: 100 px;
     font-size: 30px;
     text-align: center;
-    color: rgba(10, 238, 101, 0.718);
+    color: rgb(109, 219, 154);
     top: 20%;
+    padding-left: 2pc;
+}
+.contenedordeprincipal .img{
+    display: contents;
+    position: absolute;
     
 }
-.principal p{
+.imagePrincipal {
+    
+    justify-self: center;
+    height: 20pc;
+    width: 40pc; 
+    gap: 1pc;
+    opacity: 0pc;
+    border-radius: 30%;
+    
+    
+}
+/* TERMINAN las propiedades del DiV posterior al encabezado nombre y profesión*/
+
+/*Inicio las propiedades CSS de la sección about*/
+
+.about{
+    display:flex;
+    height: 40pc;
+    width: 100%;
+    background-color:hwb(210 90% 7%);
+    justify-content: center;
+    gap: 2pc;
+    margin: 0;
+   
+}
+.contenedoraboutPrincipal{
     display: flex;
-    width: 700px;
-    color:wheat;
+    justify-content: center;
+    justify-items: right;
+    height: 30pc;
+    width: 100%;
+    gap: 10pc;
+    margin: 50px 20px 0px 0px;
+}
+.contenedoraboutPrincipal .TextoAbout{
+    display: block;
+    justify-content: left;
+    justify-items: left;
+    gap: 2pc;
+    flex-direction:column;
+    height: 100px;
+    width: 500px;
+    justify-items: left;
+    
+}
+
+.TextoAbout .SubtituloAbout{
+    display: flex;
+    color: rgb(109, 219, 154);
+    font-family: "Roboto Slab";
+    font-weight: 50;
+    font-size: 30px;
+    text-align: left;
+    size: 50;
+    height: 8pc;
+}
+.TextoAbout .DescripcionAbout{
+    display: flex;
+    flex-direction:column;
+    font-family: "Roboto Slab";
+    gap: 1pc;
+    line-height: 2pc;
+    
+}
+
+.contenedoraboutPrincipal .contenedorabout1{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(9, 14, 11);
+    font-family: "Roboto Slab";
+    align-items: center;
+    gap: 2pc;
+    flex-direction:column;
+    height: 100px;
+    width: 500px;
+    justify-items: center;
+    padding: 3pc;
+}
+
+.contenedorabout1 .ImagenAbout{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 30pc;
+    width: 30pc; 
+    padding: 3PC;
+}
+.contenedorabout1 img{
+    display: flex;
+    border-radius: 100%;
+    height: 18pc;
+    width: 18pc; 
+}
+.contenedorabout1 .Base{
+    display: flex;
+    font-weight: 700;
+    font-size: 25.5px;
+    text-align: center;
+    justify-content: center;
+    size: 60;
+    height: 4pc;
+    width: 30pc;
+    
+}
+.contenedorabout1 .edad{
+    display: flex;
+    font-weight: 500;
+    font-size: 20.5px;
+    text-align: center;
+    justify-content: center;
+    size: 60;
+    height: 3pc;
+    width: 30pc; 
+}
+/*Termino las propiedades del About*/
+
+/* Esta es la sección de resumen defino el estilo de la sección  y Esto es para una tira de imagenes horizontales*/
+.resumen{
+
+    display: flex;
+    gap: 1pc;
+    height: 400px;
+    background-color: #2e3032;
+    align-items: center;
+    justify-content: center;
+
+}
+.ContenedorImagenes{
+    width: 30pc;
+    height: 20pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px 40px;
     text-align: center;
 }
-/*Aqui Termina el estilo la pagina principal de presentación*/
+/* Esta es para definir el estilo de la caja donde colovaremos la imagen */
+.card {
+    width: 20pc;
+    background-color:  #2e3032;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30pc;
+    opacity: 1pc;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0%;
+    box-sizing: content-box;
+}
+
+.image {
+height: 3pc;
+width: 3pc; 
+font-family: fantasy;
+gap: 1pc;
+justify-content: center;
+justify-items: center;
 
 
-.quien{
+}
+.containerInfo {
+    display: flex;
+    padding: 8px;
+    font-size: 1pc;
+    justify-content: center;
+}
+.containerInfo h5{
+  color: rgb(109, 219, 154);
+  font-size:1pc;
+
+}
+.containerInfo p{
+    color: #f0f4f2;
+    font-size:1pc;
+}
+.containerInfo a{
+    color: rgb(109, 219, 154);
+    font-size:1pc;
+}
+
+
+  /*Aqui termina todo el contenido de la seccion resumen*/
+
+
+  /*Iniciamos los estilos para los skills*/
+
+.skills{
+   display: flex;
+    justify-content: center;
+    justify-items: left;
+    background-color:hwb(210 90% 7%);
+    height: 30pc;
+    width: 100%;
+    gap: 5pc;
+    margin: 50px 20px 0px 50px;
+    flex-direction:column;
+    font-family: "Roboto Slab";
+}
+
+.skills .contenedorabout2{
     display: flex;
     justify-content: center;
-    background-color:brown;
-    height: 200px;
+    justify-items: center;
+    color: hwb(210 90% 7%);
+    font-family: "Roboto Slab";
+    align-items: center;
+    gap: 5pc;
+    flex-direction:row;
+    height: 10 pc;
+    width: 100%;
+    justify-items: center;
+    padding: 10pc;
 }
-.misservicios{
+.contenedortextoskills{
+    display: block;
+    justify-content: left;
+    justify-items: left;
+    gap: 2pc;
+    flex-direction:column;
+    height: 25pc;
+    width: 30pc;
+    text-align: left;
+    background-color: hwb(210 90% 7%);
+}
+
+.contenedortextoskills .titiloskills{
+    display: flex;
+    color: rgb(109, 219, 154);
+    font-family: "Roboto Slab";
+    font-weight: 30;
+    font-size: 20px;
+    text-align: left;
+    size: 30;
+    height: 3pc;
+    background-color: hwb(210 90% 7%);
+}
+
+.contenedortextoskills .titiloskills .listasSkills{
+    display: flex;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 20;
+    margin: 10px 50px 0px 50px;
+    background-color: hwb(210 90% 7%);
+}
+.listasSkills li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.DescripcionAbout .listasSkills img{
+    height: 1pc;
+    width: 1pc; 
+    background-color: hwb(210 90% 7%);
+}
+
+.contenedorabout1 .Imagenskill{
     display: flex;
     justify-content: center;
-    background-color:beige;
-    height: 200px; 
+    justify-items: center;
+    height: 1pc;
+    width: 1pc;
+    padding: 1PC;
+    background-color: hwb(210 90% 7%);
 }
-.contactar{
+.Imagenskill img{
+    height: 5pc;
+    width: 5pc; 
+    gap: 2pc;
+    padding: 5px;
+}
+.contenedorabout2 .Base{
     display: flex;
+    font-weight: 700;
+    font-size: 25.5px;
+    text-align: center;
     justify-content: center;
-    background-color:burlywood ;
-    height: 200px; 
+    size: 60;
+    height: 4pc;
+    width: 30pc;
+    
 }
+
+
+/*Aqui Inician los estilos para contenedor experience*/
+.Experience{
+    display: flex;
+    background-color: #2e3032;
+    align-items: center;
+    height: 90pc;
+    width: 100%;
+    flex-direction:column;
+    font-family: "Roboto Slab";
+   
+ }
+ .Experience .TitiloExperice{
+    display: flex;
+    color: hwb(210 90% 7%);
+    align-items: center;
+    font-size: 41.4px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    justify-self: center;
+    text-align: center;
+    margin: 80px 0 10px;
+
+}
+.Experience .DescripcionExperience{
+    display: flex;
+    color: hwb(210 90% 7%);
+    font-size: 17.76px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+}
+
+.Experience .ExperiencePricipal{
+    margin: 240px 0;
+    display: flex;
+    background-color: #2e3032;
+    justify-items: center;
+    justify-content: center;
+    height: 50pc;
+    width: 100%;
+    flex-direction:column;
+    font-family: "Roboto Slab";
+    align-items: center;
+    margin: 100px;
+   
+} 
+
+
+.Educacion{
+    display: flex;
+    color: #f0f4f2;
+    flex-direction:row;
+    height: 30pc;
+    width: 90%;
+  /*  border: solid 3px white;*/
+    top:2pc;
+ }
+
+.ImagenEducacion{
+    display: flex;
+    margin: 20px 40px 40px 40px;
+    
+ }
+
+ .CajaImagenesExperiencia{
+    display: flex;
+    width: 30pc;
+    height: 30pc;
+    margin: 50px 40px 40px 0px;
+    text-align: center;
+
+ }
+.linea{
+    display: flex;
+    height: 30pc;
+    margin: 54px;
+}
+
+.linea hr{
+    display: flex0;
+    text-align: center;
+    width: 4px;
+    height: 70% ;
+}
+
+ .CajaImagenesExperiencia img{
+    display: flex;
+    width: 35pc;
+    height: 25pc;
+ }
+
+ .Educacion .EstudiosRealizados{
+    display: flex;
+    width: 29pc;
+    height: 29pc;
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+ }
+
+.Educacion .EstudiosRealizados .TextoEstudiosRealizados{
+    display: flex;
+    margin: 54px 20px 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+
+
+}
+.ListarEstudios{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 10px;
+
+
+}
+
+.subTitulosExperiencia{
+    display: flex;
+    color: #e6e9ed;
+    align-items: center;
+    font-size: 22.4px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 0.03em;
+    justify-self: center;
+    text-align: center;
+    height: 100px;
+}
+
+.anioExperiencia{
+    display: flex;
+    color: hwb(210 90% 7%);
+    font-size: 17.76px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: left;
+    flex-direction: column;
+}
+/*Termina los estilos para el contenedor de experience*/
