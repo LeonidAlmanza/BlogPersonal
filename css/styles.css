@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Roboto Slab';
-    src: url('/Fuentes/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+    src: url('./Fuentes/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
 }
 /*Esto sirve para dejar margenes y hojas vacios*/
 *{
