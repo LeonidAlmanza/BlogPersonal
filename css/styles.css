@@ -8,7 +8,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab';
     box-sizing: border-box;
   }
 
@@ -20,6 +20,7 @@ header{
     top: 0; 
     height: 4pc;
     opacity: 2 pc;
+    z-index: 20;
     
     
 }
@@ -34,12 +35,25 @@ header{
     
     display: flex;
     justify-content: right;
-    gap: 1pc; /*Establece el tamaño del espacio entre las filas en un diseño de cuadrícula*/
+    gap: 2pc; /*Establece el tamaño del espacio entre las filas en un diseño de cuadrícula*/
     float: left;
-    
+    text-decoration:wavy;
+    size: 2pc;
     
     }
 
+.barrademenusuperior li{
+    width: 80px;
+    justify-content: center;
+    align-content: center;
+    color: #e6e9ed;
+    text-align: center;
+}
+.barrademenusuperior li:hover{
+    background-color:hwb(210 90% 7%);
+    border: #2e3032;
+    color: rgb(9, 14, 11);
+}
 /*Hasta aqui llegan las propiedades asociadas al encabezado*/
 /*Aqui inician las propiedades del DiV posterior al encabezado nombre y profesión*/
 .principal{
@@ -123,10 +137,10 @@ header{
     display: flex;
     justify-content: center;
     justify-items: right;
-    height: 30pc;
+    height: 40pc;
     width: 100%;
     gap: 10pc;
-    margin: 50px 20px 0px 0px;
+    margin: 80px 0px 10px 0px; /* dddddddddddddddd*/
 }
 .contenedoraboutPrincipal .TextoAbout{
     display: block;
@@ -230,6 +244,8 @@ header{
     align-items: center;
     margin: 40px 20px 40px;
     text-align: center;
+    padding: 2pc;
+    
 }
 /* Esta es para definir el estilo de la caja donde colovaremos la imagen */
 .card {
@@ -254,8 +270,17 @@ gap: 1pc;
 justify-content: center;
 justify-items: center;
 
-
 }
+.image:hover {
+    height: 4pc;
+    width: 4pc; 
+    font-family: fantasy;
+    gap: 1pc;
+    justify-content: center;
+    justify-items: center;
+    transition: ease 1s;
+    
+    }
 .containerInfo {
     display: flex;
     padding: 8px;
@@ -287,10 +312,10 @@ justify-items: center;
     justify-content: center;
     justify-items: left;
     background-color:hwb(210 90% 7%);
-    height: 30pc;
+    height: 80pc;
     width: 100%;
     gap: 5pc;
-    margin: 50px 20px 0px 50px;
+    margin: 80px 0 10px;
     flex-direction:column;
     font-family: "Roboto Slab";
 }
@@ -304,7 +329,7 @@ justify-items: center;
     align-items: center;
     gap: 5pc;
     flex-direction:row;
-    height: 10 pc;
+    height: 40 pc;
     width: 100%;
     justify-items: center;
     padding: 10pc;
@@ -363,10 +388,19 @@ justify-items: center;
     background-color: hwb(210 90% 7%);
 }
 .Imagenskill img{
-    height: 5pc;
-    width: 5pc; 
+    height: 5.5pc;
+    width: 5.5pc; 
     gap: 2pc;
     padding: 5px;
+
+}
+.Imagenskill img:hover {
+    height: 8pc;
+    width: 8pc; 
+    gap: 2pc;
+    padding: 5px;
+    transition: ease 1s;
+
 }
 .contenedorabout2 .Base{
     display: flex;
@@ -510,6 +544,7 @@ justify-items: center;
     justify-self: center;
     text-align: center;
     height: 100px;
+    margin: 80px 0 10px;
 }
 
 .anioExperiencia{
@@ -522,3 +557,219 @@ justify-items: center;
     flex-direction: column;
 }
 /*Termina los estilos para el contenedor de experience*/
+
+/**/
+.contacto{
+    display:flex;
+    height: 40pc;
+    width: 100%;
+    background-color: #2e3032;
+    justify-content: center;
+}
+
+.contactoSeccion{
+    display: flex;
+    margin: 80px 15% 20px 80px;
+    flex-direction: column;
+}
+
+.titulocontacto{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 80px 100px 20px 20px;
+}
+
+.titulocontacto h3{
+    color: #f0f4f2;
+    font-size: 2pc;
+}
+
+.textoContacto{
+    display: flex;
+    margin: 20px 100px 20px 20px;
+    flex-direction:column;
+    font-family: "Roboto Slab";
+    gap: 1pc;
+    line-height: 1pc;
+    width: 40pc;
+    color: #f0f4f2;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2e3032;
+}
+
+footer img{
+    display: flex;
+    margin: 5px 5px 5px 5px;
+    height: 3pc;
+    width: 3pc;
+}
+
+.Registro:hover{
+    background-color: #2e3032;
+    
+}
+
+.cardPortafolio {
+    width: 19pc;
+    background-color: #232323;
+    height: 402.75px;
+}
+
+.numberPortafolio {
+    position: relative;
+    height: 14pc;
+    width: 100%;
+
+    color: #616161;
+    font-family: fantasy;
+ 
+    text-align: center;
+    font-size: 6pc;
+}
+
+.imagePortafolio {
+    height: 13pc;
+    width: 13pc;
+  position: absolute;
+  top: 15px;
+  left: 0%;
+  align-items: center;
+}
+
+.cardPortafolio:hover {
+background-color: #616161;
+}
+
+.cardPortafolio:hover .numberPortafolio {
+opacity: 1;
+font-size: 8pc;
+transition: ease 1s;
+}
+
+.carrusel .TitiloExperice{
+    display: flex;
+    color: #2e3032;
+    align-items: center;
+    font-size: 41.4px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    justify-self: center;
+    text-align: center;
+    margin: 80px 0 10px;
+    flex-direction: row;
+}
+
+.containerInfoPortafolio {
+padding: 8px;
+font-size: 1pc;
+}
+
+.containerInfoPortafolio h5 {
+display: flex;
+justify-content: space-between;
+margin: 16px 0;
+
+}
+
+.centrarPortafolio {
+display: flex;
+align-items: center;
+gap: 1pc;
+}
+
+.dos p{
+margin: 16px 64px 16px 0;
+}
+
+.hab p{
+margin: 16px 0;
+}
+
+.borderPortafolio {
+padding: 3px;
+margin: 10px 10px 10px 10px;
+border-radius: 6px;
+}
+
+.containerPortafolio {
+margin: 0 500px 0 ;
+display: flex;
+flex-wrap: wrap; 
+justify-content: center;
+gap: 16px;
+}
+
+.carrusel {
+padding: 16px;
+display: flex;
+gap: 5pc;
+overflow-x: scroll;
+background-color:hwb(210 90% 7%);
+justify-content: center;
+padding: 5pc;
+}
+
+legend{
+    font-family: "Roboto Slab";
+    color: hwb(210 90% 7%);
+    font-size: 2pc;
+}
+
+/*Estilo formulario*/
+form{
+    top:2pc;
+	width:500px;
+	padding:16px;
+	border-radius:10px;
+	margin:60px auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:350px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}

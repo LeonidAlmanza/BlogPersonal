@@ -12,16 +12,16 @@
     <!--Menu Principal de la pagina web utilizo la etiqueta Nav porque esta es para navegación-->
     <nav class="barrademenusuperior">
         <ul>
-            <a href="#Home"><li>Inicio</li></a>
+            <a href="#home"><li>Inicio</li></a>
             <a href="#Habilidades"><li>Skills</li></a>
             <a href="#Experiencia"><li>Experience</li></a>
-            <a href="#quienes"><li>Portafolio</li></a>
-            <a href="#quienes"><li>Contact</li></a>
+            <a href="#Portafolio"><li>Portafolio</li></a>
+            <a href="#contacto"><li>Contact</li></a>
         </ul>
     </nav>
 </header>
 
-<div class="principal">
+<div class="principal" id="home">
     <div class="contenedordeprincipal">
         <div class="titulo">
             <h2>Leonid</h2> 
@@ -81,7 +81,7 @@
                 <div><p> Conozca mis habilidades en Ejecución de Proyectos de transformación tecnologica.</p></div>
             </div>
             <div class="containerInfo">
-                <div><a href="#"> Leer Mas...</a></div>
+                <div><a href="#Habilidades"> Leer Mas...</a></div>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
                 <div><p>Descubra y Conozca en linea de tiempo mi experiencia laboral.</p></div>
             </div>
             <div class="containerInfo">
-                <div><a href="#"> Leer Mas...</a></div>
+                <div><a href="#Experiencia"> Leer Mas...</a></div>
             </div>
         </div>
     </div>
@@ -121,15 +121,15 @@
     </div>
 </section>
 
-<section id="Habilidades" class="Skills">
-    <div class="contenedoraboutPrincipal">
-        <div class="TextoAbout">
+<section  class="Skills">
+    <div class="contenedoraboutPrincipal" id="Habilidades">
+        <div class="TextoAbout" >
             <div class="SubtituloAbout">
-                <h1>Habilidades</h1>
+                <h1>Skills</h1>
             </div>
             <div class="DescripcionAbout">
                 <ol class="listasSkills">
-                    <li><img src="./Imagenes/comprobado.png" alt="">Revisión de procesos en IPS</li>
+                    <li><img src="./Imagenes/comprobado.png" alt="">Revisión de procesos</li>
                     <li><img src="./Imagenes/comprobado.png" alt="">Desarrollo de Reporteria</li>
                     <li><img src="./Imagenes/comprobado.png" alt="">Manejo de Distintos motores de Base de Datos</li>
                     <li><img src="./Imagenes/comprobado.png" alt="">Metodologias Agiles de desarrollo</li>
@@ -144,27 +144,25 @@
         </div>
     
         <div class="contenedorabout2">
-            <div class="Base">
-                <h2>Herramientas</h2>
-            </div>
+            
             <div class="ContenedorImagenes">
                 <div class="Imagenskill">
-                    <img src="./Imagenes/html1.png" alt="HTML">
-                    <img src="./Imagenes/css1.png" alt="CSS">
-                    <img src="./Imagenes/php.png" alt="PHP">
+                    <img src="./Imagenes/html1.png" alt="HTML" title="HTML">
+                    <img src="./Imagenes/css1.png" alt="CSS" title="CSS">
+                    <img src="./Imagenes/php.png" alt="PHP" title="PHP">
                 </div>
                 <div class="Imagenskill">
-                    <img src="./Imagenes/scrum.png" alt="SCRUM">
-                    <img src="./Imagenes/kanban.png" alt="kanban">
-                    <img src="./Imagenes/procesos.jpeg" alt="PROESOS ORGANIZACIONALES">
+                    <img src="./Imagenes/scrum.png" alt="SCRUM" title="SCRUM">
+                    <img src="./Imagenes/kanban.png" alt="kanban" title="KanBAN">
+                    <img src="./Imagenes/procesos.jpeg" alt="PROESOS ORGANIZACIONALES" title="PROCESOS ORGANIZACIONALES">
                 </div>
                 <div class="Imagenskill">
-                    <img src="./Imagenes/sqlserver.png" alt="SQL SERVER">
-                    <img src="./Imagenes/postgres.png" alt="POSTGRES">
+                    <img src="./Imagenes/sqlserver.png" alt="SQL SERVER" title="SQL SERVER">
+                    <img src="./Imagenes/postgres.png" alt="POSTGRES" title="POSTGRES">
                     <img src="./Imagenes/plsql.png" alt="PL / SQL">
                 </div>
                 <div class="Imagenskill">
-                    <img src="./Imagenes/Hosvital.png" alt="HOSVITAL">
+                    <img src="./Imagenes/Hosvital.png" alt="HOSVITAL" title="HOSVITAL HIS">
                 </div>
             </div>
         </div>
@@ -263,11 +261,119 @@
             </div>
             <div class="ImagenEducacion">
                 <picture class="CajaImagenesExperiencia">
-                    <img src="./Imagenes/Estudiante.jpg" alt="">
+                    <img src="./Imagenes/JovenTrabajando.jpg" alt="">
                 </picture>
             </div>
         </div>
     </div>
+</section >
+<section id="Portafolio" class="carrusel">
+    <div class="TitiloExperice">Portafolio</div>
+    <div class="cardoPortafolio borderPortafolio">
+        <div class="numberPortafolio borderPortafolio">
+          <img
+            class="imagePortafolio"
+            height="50"
+            width="50"
+            src="./Imagenes/Gp.png"
+            alt="Gerencia de Proyectos"
+          />
+        </div>
+        <div class="containerInfoPortafolio">
+          <div class="centrarortafolioPortafolio">
+            <p class="borderPortafolio"><h2>Gerencia de Proyectos</h2></p>
+          </div>
+        </div>
+    </div>
+    <div class="cardoPortafolio borderPortafolio">
+        <div class="numberPortafolio borderPortafolio">
+          <img
+            class="imagePortafolio"
+            height="50"
+            width="50"
+            src="./Imagenes/desarrolloweb3.png"
+            alt="Gerencia de Proyectos"
+          />
+        </div>
+        <div class="containerInfoPortafolio">
+          <div class="centrarortafolioPortafolio">
+            <p class="borderPortafolio"><h2>Desarrollos a la Medida</h2></p>
+          </div>
+        </div>
+    </div>
+    <div class="cardoPortafolio borderPortafolio">
+        <div class="numberPortafolio borderPortafolio">
+          <img
+            class="imagePortafolio"
+            height="50"
+            width="50"
+            src="./Imagenes/Hosvital.png"
+            alt="Gerencia de Proyectos"
+          />
+        </div>
+        <div class="containerInfoPortafolio">
+          <div class="centrarortafolioPortafolio">
+            <p class="borderPortafolio"><h2>Soporte Software His</h2></p>
+          </div>
+        </div>
+    </div>
+    <div class="cardoPortafolio borderPortafolio">
+        <div class="numberPortafolio borderPortafolio">
+          <img
+            class="imagePortafolio"
+            height="50"
+            width="50"
+            src="./Imagenes/procesosCircular.png"
+            alt="Gerencia de Proyectos"
+          />
+        </div>
+        <div class="containerInfoPortafolio">
+          <div class="centrarortafolioPortafolio">
+            <p class="borderPortafolio"><h2>Ingeniera de Procesos</h2></p>
+          </div>
+        </div>
+    </div>
 </section>
+<section class="contacto" id="contacto">
+    <div class="contactoSeccion">
+        <Div class="titulocontacto">
+            <h3>Contacto</h3>
+        </Div>
+        <div class="textoContacto">
+        <p>Me puedes Contactar en mis redes sociales o a traves del Formulario en esta pagina</p>
+        <p><b>Mi Telefono:</b> (095) 311 6626763</p>
+        <p><b>Mail: </b>AlmanzaOLeonid@gmail.com</p>
+        </div>
+    </div>
+    <div>
+        <div >
+            <form action="#" target="" method="get" name="formDatosPersonales">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+            
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+            
+                <label for="email" />Email</label>
+                <input type="email" name="email" id="email" placeholder="email" required />
+            
+                <label for="asunto">Asunto</label>
+                <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+            
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                
+                <input type="submit" name="enviar" value="enviar datos"/>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+   <a href="https://www.linkedin.com/in/leonid-almanza-3603a22a/"><img src="./Imagenes/linkedin.png" alt=""></a>
+   <a href="https://www.facebook.com/leonid.almanza"><img src="./Imagenes/facebook_2168281.png" alt=""></a>
+   <a href="https://www.instagram.com/leonidalmanzao/"><img src="./Imagenes/instagram_4902354.png" alt=""></a>
+</footer>
 </body>
 </html>
